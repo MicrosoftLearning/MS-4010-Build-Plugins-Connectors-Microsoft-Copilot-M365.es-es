@@ -20,7 +20,7 @@ En Visual Studio:
     ```json
     "identifierUris": [
         "api://${{BOT_DOMAIN}}/botid-${{BOT_ID}}"
-    ]
+    ],
     ```
 
 1. En el archivo, actualiza la matriz **oauth2Permissions** para crear un ámbito para permitir que Teams llame a las API web como administrador o usuario:
@@ -86,7 +86,7 @@ En Visual Studio:
             "${{AAD_APP_ACCESS_AS_USER_PERMISSION_ID}}"
           ]
         }
-      ]
+      ],
     ```
 
 1. Guarda los cambios
@@ -96,13 +96,13 @@ Luego actualiza el archivo de manifiesto de la aplicación para definir el recur
 Continúa en Visual Studio:
 
 1. En la carpeta **appPackage**, abre el archivo denominado **manifest.json**
-1. En el archivo agrega el código siguiente:
+1. En el archivo, agrega el código siguiente después de la **descripción**:
 
     ```json
     "webApplicationInfo": {
       "id": "${{BOT_ID}}",
       "resource": "api://${{BOT_DOMAIN}}/botid-${{BOT_ID}}"
-    }
+    },
     ```
 
 1. Guarda los cambios
@@ -500,7 +500,7 @@ Ahora que ya está todo listo, ejecuta el proceso de preparar las dependencias d
 
 Continúa en Visual Studio:
 
-1. En **Explorador de soluciones**, haz clic con el botón derecho en el proyecto **MsgExtProductSupport**
+1. En **Explorador de soluciones**, haz clic con el botón derecho en el proyecto **TeamsApp**
 1. Expande el menú del **kit de herramientas de teams** y selecciona **Preparar dependencias de la aplicación de Teams**
 1. En el cuadro de diálogo **Cuenta de Microsoft 365**, selecciona **Continuar**
 1. En el cuadro de diálogo **Provision**, selecciona **Provision**
@@ -522,16 +522,11 @@ Continúa en Visual Studio:
 1. En el área de redacción del mensaje, selecciona **...** para abrir el control flotante de la aplicación
 1. En la lista de aplicaciones, selecciona **Contoso products** para abrir la extensión de mensajes
 1. En el cuadro de texto, introduce **Bot Builder** para iniciar una búsqueda
-1. En la lista de resultados, **selecciona un resultado** para insertar una tarjeta en el cuadro de redacción del mensaje
 1. Se muestra el mensaje: **You'll need to sign in to use this app**
 1. Selecciona el **vínculo de inicio de sesión** para abrir una nueva pestaña e iniciar el flujo de autenticación
-1. En la página de consentimiento de permisos, revisa los permisos que se solicitan
-1. Selecciona *Aceptar* para cerrar la pestaña y volver a Microsoft Teams
-1. En el área de redacción del mensaje, selecciona **...** para abrir el control flotante de la aplicación
-1. En la lista de aplicaciones, selecciona **Contoso products** para abrir la extensión de mensajes
-1. En el cuadro de texto, introduce **Bot Builder** para iniciar una búsqueda
-1. Se te pedirá que vuelvas a iniciar sesión. Sigue el **vínculo de inicio de sesión** de nuevo para iniciar la búsqueda.
-1. En la lista de resultados, **selecciona un resultado** para insertar una tarjeta en el cuadro de redacción del mensaje
+1. En la página de consentimiento de permisos, revisa los permisos que se solicitan.
+1. Selecciona **Aceptar** para cerrar la pestaña y volver a Microsoft Teams
+1. En la lista de resultados, **selecciona un resultado** para insertar una tarjeta en el cuadro de redacción de mensajes y enviarla.
 
 Cierra el explorador para detener la sesión de depuración.
 
