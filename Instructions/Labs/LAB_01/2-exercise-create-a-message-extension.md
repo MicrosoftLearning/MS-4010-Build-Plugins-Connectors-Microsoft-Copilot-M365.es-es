@@ -8,7 +8,7 @@ lab:
 
 En este ejercicio, crearás una extensión de mensajes con un comando de búsqueda. Primero aplicarás scaffolding a un proyecto con una plantilla de proyecto del kit de herramientas de Teams y luego lo actualizarás para configurarlo mediante un recurso del Servicio de Bot de Azure AI para el desarrollo local. Crearás un túnel de desarrollo para habilitar la comunicación entre el servicio de bot y el servicio web que ejecutas localmente. Luego prepararás la aplicación para aprovisionar los recursos necesarios. Por último, ejecutarás y depurarás la extensión de mensajes y la pruebas en Microsoft Teams.
 
-:::image type="content" source="../media/2-search-results-nuget.png" alt-text="Captura de pantalla de los resultados de la búsqueda devueltos por una extensión de mensajes basada en búsqueda en Microsoft Teams." lightbox="../media/2-search-results-nuget.png":::
+![Captura de pantalla de los resultados de la búsqueda devueltos por una extensión de mensajes basada en búsqueda en Microsoft Teams.](../media/2-search-results-nuget.png)
 
 ## Tarea 1: Creación de un nuevo proyecto con el kit de herramientas de Teams para Visual Studio
 
@@ -19,8 +19,7 @@ Empieza creando un nuevo proyecto.
 1. En la pantalla Crear un nuevo proyecto, expande el elemento desplegable **Todas las plataformas** y después selecciona **Microsoft Teams**. Selecciona **Siguiente** para continuar.
 1. En la pantalla Configurar el nuevo proyecto. Especifica los valores siguientes:
     1. **Nombre de proyecto**: MsgExtProductSupport
-    1. **Ubicación**: selecciona la ubicación de tu elección
-    1. **Colocar la solución y el proyecto en el mismo directorio**: marcado
+    1. **Ubicación**: elija la ubicación predeterminada
 1. Selecciona **Crear** para aplicar scaffolding al proyecto
 1. En el cuadro de diálogo Crear una nueva aplicación de Teams, expande el elemento desplegable **Todos los tipos de aplicaciones** y luego selecciona **Extensión de mensajes**
 1. En la lista de plantillas, selecciona **Resultados de búsqueda personalizada**
@@ -149,7 +148,7 @@ El último paso es actualizar el archivo del proyecto del kit de herramientas de
 Continúa en Visual Studio:
 
 1. En la carpeta raíz del proyecto, abre **teamsapp.local.yml**
-1. En el archivo, busca el paso que usa la acción **botAadApp/create** y remplázala por:
+1. En el archivo, busca el paso que usa la acción **botAadApp/create** (línea 17-26) y reemplázala por:
 
     ```yml
       - uses: aadApp/create
@@ -181,8 +180,8 @@ Continúa en Visual Studio:
           bicepCliVersion: v0.9.1
     ```
 
-1. En el archivo, quita el paso que usa la acción **botFramework/create**
-1. Guarda los cambios.
+1. En el archivo, quita el paso que usa la acción **botFramework/create** (líneas 53-62).
+1. Guarde los cambios.
 
 El registro de aplicación se aprovisiona en dos pasos, primero la acción **aadApp/create** crea un nuevo registro de aplicación multiinquilino con un secreto de cliente, escribiendo sus salidas en el archivo **.env.local** como variables de entorno. Después la acción **aadApp/update** usa el archivo **entra.bot.manifest.json** para actualizar el registro de aplicación.
 
@@ -192,18 +191,18 @@ El último paso usa la acción **arm/deploy** para aprovisionar el recurso del S
 
 Cuando el usuario interactúa con la extensión de mensajes, el servicio de bot envía solicitudes al servicio web. Durante el desarrollo, el servicio web se ejecuta localmente en el equipo. Para permitir que el servicio de bot llegue al servicio web, debes exponerlo más allá del equipo con un túnel de desarrollo.
 
-:::image type="content" source="../media/18-select-dev-tunnel.png" alt-text="Captura de pantalla del menú expandido de túneles Dev en Visual Studio." lightbox="../media/18-select-dev-tunnel.png":::
+![Captura de pantalla del menú expandido de túneles Dev en Visual Studio.](../media/18-select-dev-tunnel.png)
 
 Continúa en Visual Studio:
 
-1. En la barra de herramientas, expande el menú del perfil de depuración **seleccionando el elemento desplegable situado junto al botón Microsoft Teams (browser)**
+1. En la barra de herramientas, asegúrate de que **MsgExtProductSupport** está seleccionado como proyecto de inicio y expande el menú del perfil de depuración seleccionando la lista desplegable junto al botón **Microsoft Teams (explorador)** o **Iniciar proyecto**.
 1. Expande el menú **Dev Tunnels (no active tunnel)** y selecciona **Create a Tunnel...**
 1. En el cuadro de diálogo especifica los valores siguientes:
-    1. **Cuenta**: selecciona la cuenta de tu elección
+    1. **Cuenta**: inicia sesión con tu cuenta de usuario de Microsoft 365.
     1. **Nombre**: MsgExtProductSupport
     1. **Tipo de túnel**: temporal
     1. **Acceso**: público
-1. Para crear el túnel, selecciona **Aceptar**, se muestra un mensaje que indica que el nuevo túnel es ahora el túnel activo actual
+1. Para crear el túnel, selecciona **Aceptar.**
 1. Cierra el mensaje seleccionado **Aceptar**
 
 ## Tarea 4: Actualización del manifiesto de la aplicación
@@ -212,9 +211,9 @@ El manifiesto de la aplicación describe las características y funcionalidades 
 
 Descarga primero los iconos de la aplicación y agrégalos al proyecto.
 
-:::image type="content" source="../media/app/color-local.png" alt-text="Icono de color usado para el desarrollo local." lightbox="../media/app/color-local.png":::
+![Icono de color usado para el desarrollo local.](../media/app/color-local.png)
 
-:::image type="content" source="../media/app/color-dev.png" alt-text="Icono de color usado para el desarrollo remoto." lightbox="../media/app/color-dev.png":::
+![Icono de color usado para el desarrollo remoto.](../media/app/color-dev.png)
 
 1. Descarga **color-local.png** y **color-dev.png**
 1. En la carpeta **appPackage**, agrega **color-local.png** y **color-dev.png**
@@ -236,10 +235,9 @@ Continúa en Visual Studio:
 Por último, actualiza los iconos, el nombre y los objetos de descripción en el archivo de manifiesto de la aplicación.
 
 1. En la carpeta **appPackage**, abre el archivo denominado **manifest.json**
-1. En el archivo, actualiza los **iconos**, **name y los objetos de **descripción** con:
+1. En el archivo, reemplaza los objetos de **iconos**, **nombre** y **descripción** por los siguientes (líneas 13-24):
 
     ```json
-    {
         "icons": {
             "color": "color-${{TEAMSFX_ENV}}.png",
             "outline": "outline.png"
@@ -251,8 +249,7 @@ Por último, actualiza los iconos, el nombre y los objetos de descripción en el
         "description": {
             "short": "Product look up tool.",
             "full": "Get real-time product information and share them in a conversation."
-        }
-    }
+        },
     ```
 
 1. Guarda los cambios
@@ -261,18 +258,18 @@ Por último, actualiza los iconos, el nombre y los objetos de descripción en el
 
 Ahora que está todo listo, usa el kit de herramientas de Teams para ejecutar el proceso Preparar dependencias de la aplicación de Teams para aprovisionar los recursos necesarios.
 
-:::image type="content" source="../media/19-prepare-teams-app-dependencies.png" alt-text="Captura de pantalla que muestra el menú expandido del kit de herramientas de Teams en Visual Studio Code." lightbox="../media/19-prepare-teams-app-dependencies.png":::
+![Captura de pantalla que muestra el menú expandido del kit de herramientas de Teams en Visual Studio Code.](../media/19-prepare-teams-app-dependencies.png)
 
 El proceso de preparar dependencias de la aplicación de Teams actualiza las variables de entorno **BOT_ENDPOINT** y **BOT_DOMAIN** en el archivo .env.local mediante la dirección URL activa del túnel de desarrollo y ejecuta las acciones descritas en el archivo **teamsapp.local.yml**.
 
 Continúa en Visual Studio:
 
-1. En el Explorador de soluciones, haz clic con el botón derecho en el proyecto **MsgExtProductSupport**
+1. En Explorador de soluciones, haz clic con el botón derecho en **TeamsApp** en el Explorador de soluciones.
 1. Expande el menú del **kit de herramientas de teams** y selecciona **Preparar dependencias de la aplicación de Teams**
 1. En el cuadro de diálogo **Cuenta de Microsoft 365**, selecciona la cuenta del inquilino de desarrollador y después selecciona **Continuar**
 1. En el cuadro de diálogo **Provision**, selecciona la cuenta que usarás para implementar recursos en Azure y especifica los valores siguientes:
     1. **Nombre de suscripción**: selecciona la suscripción que desea usar en el elemento desplegable
-    1. **Grupo de recursos**: selecciona New... para abrir un cuadro de diálogo, escribe **rg-msgext-product-support-local y después selecciona **Aceptar**
+    1. **Grupo de recursos**: expande la lista desplegable y selecciona el grupo de recursos que se ha creado previamente para tu cuenta de usuario.
     1. **Región**: selecciona la región que tengas más cerca en el elemento desplegable
 1. Selecciona **Provision** para aprovisionar los recursos en Azure
 1. En el mensaje de advertencia del kit de herramientas de Teams, selecciona **Aprovisionar**
@@ -287,6 +284,7 @@ Ahora inicia el servicio web y prueba la extensión de mensajes. El kit de herra
 Continúa en Visual Studio:
 
 1. Presiona F5 para iniciar una sesión de depuración y abrir una nueva ventana del explorador que navegue por el cliente web de Microsoft Teams.
+1. Elige **Sí** cuando se te pida que confíes en los distintos certificados SSL, y selecciona de nuevo **Sí** para cualquier advertencia de seguridad. Ten en cuenta que es posible que tengas que reiniciar el depurador después de aceptar los certificados.
 1. Cuando se te solicite, escribe las credenciales de la cuenta de Microsoft 365.
 
   > [!IMPORTANT]
@@ -303,7 +301,7 @@ Procede a instalar la aplicación:
 
 1. En el cuadro de diálogo de instalación de la aplicación, selecciona **Agregar**
 1. Abre un chat de Microsoft Teams nuevo o existente
-1. En el área de redacción del mensaje, selecciona **...** para abrir el control flotante de la aplicación
+1. En el área de redacción de mensajes, empieza a escribir **/apps** para abrir el control flotante.
 1. En la lista de aplicaciones, selecciona **Contoso products** para abrir la extensión de mensajes
 1. En el cuadro de texto, introduce **Bot Builder** para iniciar una búsqueda
 1. En la lista de resultados, selecciona un resultado para insertar una tarjeta en el cuadro de redacción del mensaje
