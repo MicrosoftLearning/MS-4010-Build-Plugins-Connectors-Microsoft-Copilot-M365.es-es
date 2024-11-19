@@ -1,7 +1,7 @@
 ---
 lab:
   title: 'Ejercicio 2: Agregar un inicio de sesión único'
-  module: 'LAB 01: Connect Copilot for Microsoft 365 to your external data in real-time with message extension plugins built with .NET and Visual Studio'
+  module: 'LAB 01: Connect Microsoft 365 Copilot to your external data in real-time with message extension plugins built with .NET and Visual Studio'
 ---
 
 # Ejercicio 2: Agregar un inicio de sesión único
@@ -244,7 +244,7 @@ A continuación, actualiza el código del bot para usar el nombre de configuraci
 
 1. En la carpeta **Search**, abre **SearchApp.cs**.
 
-1. Al principio de la clase **SearchApp**, crea un constructor que acepte un objeto **IConfiguration** y asigna el valor de la propiedad **CONNECTION_NAME** a un campo privado denominado **connectionName**:
+1. Al principio de la clase **SearchApp** (aproximadamente en la línea 14), crea un constructor que acepte un objeto **IConfiguration** y asigne el valor de la propiedad **CONNECTION_NAME** a un campo privado llamado **connectionName**:
 
     ```csharp
     private readonly string connectionName;
@@ -254,7 +254,7 @@ A continuación, actualiza el código del bot para usar el nombre de configuraci
     }  
     ```
 
-1. Guarda los cambios.
+1. Guarde los cambios.
 
 ## Tarea 4: Configuración de la configuración de conexión de la API de productos
 

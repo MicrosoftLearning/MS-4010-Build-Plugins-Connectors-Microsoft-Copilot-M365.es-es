@@ -1,14 +1,14 @@
 ---
 lab:
-  title: 'Ejercicio 4: Ampliación y optimización de las extensiones de mensajes para su uso con Copilot para Microsoft 365'
-  module: 'LAB 01: Connect Copilot for Microsoft 365 to your external data in real-time with message extension plugins built with .NET and Visual Studio'
+  title: 'Ejercicio 4: Ampliación y optimización de extensiones de mensajes para usar con Microsoft 365 Copilot'
+  module: 'LAB 01: Connect Microsoft 365 Copilot to your external data in real-time with message extension plugins built with .NET and Visual Studio'
 ---
 
-# Ejercicio 4: Ampliación y optimización de las extensiones de mensajes para su uso con Copilot para Microsoft 365
+# Ejercicio 4: Ampliación y optimización de extensiones de mensajes para usar con Microsoft 365 Copilot
 
-En este ejercicio, ampliarás y optimizarás la extensión de mensajes para su uso con Copilot para Microsoft 365. Agregarás un nuevo parámetro denominado Target Audience y actualizarás la lógica de la extensión de mensajes para controlar varios parámetros. Por último, ejecutarás y depurarás la extensión de mensajes y la probarás en Copilot en Microsoft Teams.
+En este ejercicio, ampliarás y optimizarás la extensión de mensajes para usar con Microsoft 365 Copilot. Agregarás un nuevo parámetro denominado Target Audience y actualizarás la lógica de la extensión de mensajes para controlar varios parámetros. Por último, ejecutarás y depurarás la extensión de mensajes y la probarás en Copilot en Microsoft Teams.
 
-![Captura de pantalla de una respuesta en Copilot para Microsoft 365 que contiene la información devuelta por el complemento de extensión de mensajes. Se muestra una tarjeta adaptable que muestra información del producto.](../media/5-copilot-answer.png)
+![Captura de pantalla de una respuesta en Microsoft 365 Copilot que contiene la información devuelta por el complemento de extensión de mensajes. Se muestra una tarjeta adaptable que muestra información del producto.](../media/5-copilot-answer.png)
 
 > [!NOTE]
 > La Tarea 5 es la única tarea de este ejercicio que requiere una licencia de Microsoft 365 Copilot. Las tareas anteriores deben realizarse tanto si el inquilino tiene Copilot como si no.
@@ -212,21 +212,21 @@ A continuación, inicia una sesión de depuración de Visual Studio:
 
 1. En la lista de complementos, cambia al complemento **Contoso products** para habilitarlo.
 
-    ![Captura de pantalla de Copilot para Microsoft 365 en Microsoft Teams con el complemento Contoso products habilitado.](../media/20-copilot-plugin-enabled.png)
+    ![Captura de pantalla de Microsoft 365 Copilot en Microsoft Teams con el complemento de productos de Contoso habilitado.](../media/20-copilot-plugin-enabled.png)
 
 1. Escribe **Find Contoso products aimed at individuals** como tu mensaje y envíalo.
 
 1. Espera a que Copilot responda:
 
-    ![Captura de pantalla de Copilot para Microsoft 365 en Microsoft Teams que muestra el mensaje del copiloto que se muestra al procesar la solicitud del usuario.](../media/21-copilot-thinking.png)
+    ![Captura de pantalla de Microsoft 365 Copilot en Microsoft Teams que muestra el mensaje del copiloto que aparece al procesar la solicitud del usuario.](../media/21-copilot-thinking.png)
 
 1. En la respuesta de Copilot, se muestran los datos devueltos en la respuesta del complemento y se hace referencia a éste en la respuesta:
 
-    ![Captura de pantalla de una respuesta en Copilot para Microsoft 365 que contiene la información devuelta por el complemento de extensión de mensajes. Se muestra una tarjeta adaptable que muestra información del producto.](../media/5-copilot-answer.png)
+    ![Captura de pantalla de una respuesta en Microsoft 365 Copilot que contiene la información devuelta por el complemento de extensión de mensajes. Se muestra una tarjeta adaptable que muestra información del producto.](../media/5-copilot-answer.png)
 
 1. Para ver la tarjeta adaptable relevante para el resultado, mantén el puntero sobre las referencias en la respuesta de Copilot:
 
-    ![Captura de pantalla de Copilot para Microsoft 365 en Microsoft Teams en la que se muestra una tarjeta adaptable con información del producto. La tarjeta se muestra cuando el usuario mantiene el puntero sobre una referencia en la respuesta de Copilot.](../media/22-copilot-reference.png)
+    ![Captura de pantalla de Microsoft 365 Copilot en Microsoft Teams en la que se muestra una tarjeta adaptable con información del producto. La tarjeta se muestra cuando el usuario mantiene el puntero sobre una referencia en la respuesta de Copilot.](../media/22-copilot-reference.png)
 
 Vuelve a Visual Studio y selecciona **Detener** en la barra de herramientas o presiona <kbd>Mayús</kbd> + <kbd>F5</kbd> para detener la sesión de depuración. Además, apaga el proxy de desarrollo mediante <kbd>Ctrl</kbd> + <kbd>C</kbd>.
 

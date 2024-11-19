@@ -1,12 +1,12 @@
 ---
 lab:
   title: 'Ejercicio 3: Agregar un nuevo comando'
-  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft Copilot'
+  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft 365 Copilot'
 ---
 
 # Ejercicio 3: Agregar un nuevo comando
 
-En este ejercicio, mejorarás la extensión de mensajes de Teams y el complemento de Copilot agregando un nuevo comando. Aunque la extensión de mensajes actual proporciona eficazmente información sobre los productos dentro de la base de datos de inventario de Northwind, no proporciona información relacionada con los clientes de Northwind. Introducirás un nuevo comando asociado a una llamada API que recupera los productos pedidos por un nombre de cliente especificado por el usuario. En este ejercicio se supone que has completado al menos los ejercicios 1, 2 y 3. Puedes omitir el ejercicio 4 en caso de que no tengas una licencia de Copilot para Microsoft 365.
+En este ejercicio, mejorarás la extensión de mensajes de Teams y el complemento de Copilot agregando un nuevo comando. Aunque la extensión de mensajes actual proporciona eficazmente información sobre los productos dentro de la base de datos de inventario de Northwind, no proporciona información relacionada con los clientes de Northwind. Introducirás un nuevo comando asociado a una llamada API que recupera los productos pedidos por un nombre de cliente especificado por el usuario. En este ejercicio se supone que has completado al menos los ejercicios 1, 2 y 3. Puedes omitir el ejercicio 4 en caso de que no tengas una licencia de Microsoft 365 Copilot.
 
 Realizaremos las siguientes tareas para lograr esto:
 
@@ -232,7 +232,7 @@ Ahora, modificaremos el archivo **products.ts** para agregar la nueva consulta d
 
 ## Tarea 5: Ejecución de la aplicación Buscar producto por nombre de empresa
 
-Ahora estás listo para probar el ejemplo como complemento para Copilot para Microsoft 365.
+Ahora estás listo para probar el ejemplo como complemento para Microsoft 365 Copilot.
 
 1. Elimina la aplicación **Northwest Inventory** en Teams. Esta tarea es necesaria, ya que estás actualizando el manifiesto. Las actualizaciones del manifiesto requieren que se vuelva a instalar la aplicación. La manera más limpia de hacerlo es eliminarla primero de Teams.
 

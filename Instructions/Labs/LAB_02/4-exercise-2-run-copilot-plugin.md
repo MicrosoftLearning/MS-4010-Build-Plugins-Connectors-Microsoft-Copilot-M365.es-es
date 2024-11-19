@@ -1,17 +1,17 @@
 ---
 lab:
   title: 'Ejercicio 2: Ejecución del ejemplo como complemento de Copilot'
-  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft Copilot'
+  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft 365 Copilot'
 ---
 
 # Ejercicio 2: Ejecución del ejemplo como complemento de Copilot
 
-En este ejercicio, ejecutarás la aplicación como un complemento para Microsoft Copilot para Microsoft 365. Experimentarás con varios mensajes y observarás cómo se invoca el complemento mediante distintos parámetros.
+En este ejercicio, ejecutarás la aplicación como un complemento para Microsoft 365 Copilot. Experimentarás con varios mensajes y observarás cómo se invoca el complemento mediante distintos parámetros.
 
 > [!NOTE]  
-> Para realizar el ejercicio siguiente, la cuenta debe tener una licencia válida para Copilot para Microsoft 365.
+> Para realizar el ejercicio siguiente, la cuenta debe tener una licencia válida de Microsoft 365 Copilot.
 
-## Tarea 1: Prueba en Microsoft Copilot para Microsoft 365 (parámetro único)
+## Tarea 1: Prueba en Microsoft 365 Copilot (parámetro único)
 
 1. En el raíl de la aplicación a la izquierda, selecciona la aplicación **Copilot**.
 
@@ -45,7 +45,7 @@ Prueba estas tarjetas adaptables para tomar medidas sobre los productos. Ten en 
 
 No dudes en intentar crear tus propias indicaciones. Descubrirás que solo funcionan si Copilot puede consultar el complemento para obtener la información necesaria. Esto destaca la necesidad de prever los tipos de mensajes que emitirán los usuarios y proporcionar los tipos correspondientes de consultas para cada uno. Tener varios parámetros hará que esto sea más eficaz.
 
-## Tarea 2: Prueba en Microsoft Copilot para Microsoft 365 (varios parámetros)
+## Tarea 2: Prueba en Microsoft 365 Copilot (varios parámetros)
 
 En este ejercicio probarás algunas indicaciones que ejercen la característica de varios parámetros en el complemento de ejemplo. Estos mensajes solicitarán datos que se pueden recuperar por **nombre**, **categoría**, **estado de inventario**, **ciudad del proveedor** y **nivel de existencias**, tal como se define en el **manifiesto de la aplicación**.
 
@@ -111,7 +111,7 @@ Como puedes observar, debajo de la respuesta generada por Copilot, tenemos una t
 
 ## Comprobar el trabajo
 
-Después de completar las tareas de este ejercicio, deberías ser capaz usar el complemento **Northwind Inventory** en Copilot para Microsoft 365. 
+Después de completar las tareas de este ejercicio, deberías ser capaz de usar el complemento **Northwind Inventory** en Microsoft 365 Copilot. 
 
 Ahora que has completado ese ejercicio, está listos para agregar un nuevo comando a la extensión de mensajería para que puedas expandir las funcionalidades del complemento y realizar más tareas. 
 
