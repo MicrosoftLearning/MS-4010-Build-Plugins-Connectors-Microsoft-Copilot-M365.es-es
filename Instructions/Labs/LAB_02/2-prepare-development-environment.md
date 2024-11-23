@@ -1,7 +1,7 @@
 ---
 lab:
   title: Preparación del entorno de desarrollo
-  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft Copilot'
+  module: 'LAB 02: Build your own message extension plugin with TypeScript (TS) for Microsoft 365 Copilot'
 ---
 
 # Preparación del entorno de desarrollo
@@ -11,7 +11,7 @@ Primero vamos a preparar el entorno de desarrollo, las cuentas y el software. An
 ## Tarea 1: Requisitos previos de instalación
 
 > [!IMPORTANT]
-> Para completar este proyecto correctamente, necesitarás una cuenta de Microsoft 365 con permiso para cargar aplicaciones. Para completar el **ejercicio 2**, la cuenta también debe tener licencia para Microsoft Copilot para Microsoft 365.
+> Para completar este proyecto correctamente, necesitarás una cuenta de Microsoft 365 con permiso para cargar aplicaciones. Para completar el **ejercicio 2**, la cuenta también debe tener una licencia de Microsoft 365 Copilot.
 
 Si usas un nuevo inquilino, antes de comenzar es recomendable iniciar sesión en la [página de Microsoft 365](https://office.com) en [https://office.com](https://office.com). En función de cómo se configure el inquilino, es posible que se te pida que configures la autenticación multifactor. Asegúrate de que puedes acceder a Microsoft Teams y Microsoft Outlook antes de continuar.
 
