@@ -36,7 +36,7 @@ Al final de este módulo, podrás crear extensiones de mensajes escritas en C# (
 - Acceso de administrador a un inquilino de Microsoft 365
 - Acceso a una suscripción de Azure
 - El acceso a Microsoft 365 Copilot es opcional y solo se requiere para completar el **Ejercicio 4: Tarea 5**.
-- Visual Studio 2022 17.10+ con el [kit de herramientas de Teams](/microsoftteams/platform/toolkit/toolkit-v4/teams-toolkit-fundamentals-vs) (componente de herramientas de desarrollo de Microsoft Teams) instalado
+- [Visual Studio Code](https://code.visualstudio.com/) con la extensión [kit de herramientas de Teams](https://marketplace.visualstudio.com/items?itemName=TeamsDevApp.ms-teams-vscode-extension) instalada
 - [.NET 8.0](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Proxy de desarrollo 0.19.1+](https://aka.ms/devproxy)
 
@@ -56,4 +56,4 @@ Al término de este módulo, podrá:
 - Comprender cómo autenticar a los usuarios mediante el inicio de sesión único y llamar a una API personalizada protegida con la autenticación de Microsoft Entra.
 - Comprender cómo ampliar y optimizar extensiones de mensajes para usar con Microsoft 365 Copilot.
 
-Cuando estés listo para comenzar, selecciona [ir al primer ejercicio...](./2-exercise-create-a-message-extension.md)
+Cuando esté listo para comenzar, vaya [ir al primer ejercicio...](./2-exercise-create-a-message-extension.md)
