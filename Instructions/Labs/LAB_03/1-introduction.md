@@ -1,29 +1,32 @@
 ---
 lab:
   title: Introducción
-  module: 'LAB 03: Build your own message extension plugin with TypeScript (TS) for Microsoft Copilot'
+  module: 'LAB 03: Use Adaptive Cards to show data in API plugins for declarative agents'
 ---
 
 # Introducción
 
-En este proyecto, aprenderás a usar las extensiones de mensajes de Teams como complementos en Microsoft Copilot para Microsoft 365. El proyecto se basa en el ejemplo de "Northwind Inventory" incluido en este mismo [repositorio de GitHub](https://github.com/OfficeDev/Copilot-for-M365-Plugins-Samples/tree/main/samples/msgext-northwind-inventory-ts). Al usar la venerable [base de datos de Northwind](https://learn.microsoft.com/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases), tendrás muchos datos empresariales simulados con los que trabajar.
+Al ampliar los agentes declarativos con acciones, puedes conectarlos a sistemas y servicios externos a través de sus API. La conexión de un agente a los sistemas existentes puede ayudarte a automatizar las tareas y obtener información mediante el lenguaje natural. Para mejorar la experiencia del usuario, puedes usar tarjetas adaptables para representar la información que el agente recupera de las API de una manera visualmente atractiva.
 
-Northwind opera un negocio de comercio electrónico de alimentos especializados en Spokane, Washington. En este laboratorio, trabajarás con la aplicación Northwind Inventory, que proporciona acceso al inventario de productos y a la información financiera.
+## Escenario de ejemplo
 
-Este ejercicio debería tardar en completarse **60** minutos aproximadamente.
+Supongamos que has creado recientemente un agente declarativo que se integra con la API de un restaurante local. Con el agente puedes examinar el menú del día y realizar un pedido mediante lenguaje natural. La API del restaurante proporciona una lista detallada de platos, sus ingredientes y alergenos. Quieres mejorar las respuestas del agente mediante la representación de la información sobre platos mediante tarjetas adaptables. También quieres representar el resumen del pedido mediante una tarjeta adaptable para proporcionar una representación visual del pedido. Mediante las tarjetas adaptables, puedes incluir imágenes, texto y botones para que la información sea más atractiva.
 
-## Antes de comenzar
+## ¿Qué haremos?
 
-- [**Prepárate**](./2-prepare-development-environment.md) primero configurando el entorno de desarrollo y ejecutando la aplicación.
+En este módulo, ampliarás un complemento de API existente para que un agente declarativo represente la información que recibe de una API mediante tarjetas adaptables. Aprenderás a:
 
-- En el [**ejercicio 1**](./3-exercise-1-run-message-extension.md), ejecutarás la misma aplicación como una [extensión de mensajes](https://learn.microsoft.com/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions) en Microsoft Teams y Outlook.
+- **Crear**: crearás una plantilla de tarjeta adaptable que muestre los datos de la API.
+- **Comprobar**: comprobarás que la plantilla de tarjeta adaptable representa correctamente los datos de la API.
+- **Configurar**: configurarás el complemento de API para representar los datos mediante la plantilla de tarjeta adaptable.
+- **Aprovisionar**: cargarás el agente declarativo en Microsoft 365 Copilot y validarás los resultados.
 
-- En el [**ejercicio 2**](./4-exercise-2-run-copilot-plugin.md), ejecutarás la aplicación como complemento para Copilot para Microsoft 365. Experimentarás con varios mensajes y observarás cómo se invoca el complemento mediante distintos parámetros. Al chatear con Copilot, podrás ver la consola del desarrollador para ver las consultas que está realizando.
+![Captura de pantalla de un agente declarativo que responde a un usuario con información de una API externa mediante una tarjeta adaptable.](../media/LAB_03/1-agent-response-adaptive-card-dish.png)
 
-- En el [**ejercicio 3**](./5-exercise-3-add-new-command.md), aprenderás a agregar un nuevo comando a la aplicación para que puedas expandir las funcionalidades del complemento y realizar más tareas.
+## Duración del laboratorio
 
-  ![Captura de pantalla de una tarjeta adaptable que muestra un producto.](../media/1-00-product-card-only.png)
+- **Tiempo estimado para completarlo**: 35 minutos
 
-- Por último, [**en el ejercicio 4**](./6-exercise-4-explore-plugin-source-code.md), explorarás el código para ver cómo funciona más detalladamente. Si aún no tienes Copilot, todo lo demás seguirá funcionando como una extensión de mensajes para Microsoft 365.
+## Objetivos de aprendizaje
 
-Cuando estés listo para comenzar, selecciona [ir al ejercicio siguiente...](./2-prepare-development-environment.md)
+Al final de este módulo, sabrás cómo crear plantillas de tarjetas adaptables para usarlas con agentes declarativos. Podrás comprobar que las plantillas representan los datos correctamente y configurar el complemento de API para usar las plantillas.
