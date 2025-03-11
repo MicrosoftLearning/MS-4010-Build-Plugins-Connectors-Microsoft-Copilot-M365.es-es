@@ -78,7 +78,7 @@ El archivo cargado debe tener el siguiente contenido:
 }
 ```
 
-## Tarea 4: Cargar el agente declarativo en Microsoft 365
+## Tarea 4: Carga del agente declarativo en Microsoft 365
 
 > [!IMPORTANT]
 > Antes de empezar, asegúrate de que tienes instalada la extensión Teams Toolkit en Visual Studio Code. Si aún no has instalado la extensión desde Marketplace, hazlo ahora.

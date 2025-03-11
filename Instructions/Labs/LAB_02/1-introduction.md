@@ -16,7 +16,7 @@ Supongamos que trabajas en una organización donde pedís comida regularmente a 
 
 ## ¿Qué hará?
 
-En este módulo, crearás una acción para un agente declarativo con un complemento de API. La acción permite al agente interactuar con un sistema externo mediante su API anónima. Aprenderá a:
+En este módulo, crearás una acción para un agente declarativo con un complemento de API. La acción permite al agente interactuar con un sistema externo mediante su API anónima. Aprenderás a:
 
 - **Creación**: crea un complemento de API que se conecte a una API anónima.
 - **Configuración**: configura el complemento de API para mostrar los datos de la API.

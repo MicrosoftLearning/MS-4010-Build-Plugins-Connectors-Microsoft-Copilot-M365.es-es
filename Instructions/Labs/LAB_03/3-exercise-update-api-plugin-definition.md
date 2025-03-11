@@ -118,4 +118,4 @@ En Visual Studio Code:
     }
     ```
 
-1. Guarde los cambios.
+1. Guarda los cambios.

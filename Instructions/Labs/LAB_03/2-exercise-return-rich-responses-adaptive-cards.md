@@ -12,14 +12,14 @@ Comencemos creando plantillas de tarjeta adaptable para que el agente muestre lo
 
 - **Tiempo estimado para completarlo**: 10 minutos
 
-## Tarea 1: Descargar el proyecto de inicio
+## Tarea 1: Descarga del proyecto de inicio
 
 Empieza descargando el proyecto de ejemplo. En un explorador web:
 
 1. Vaya a [https://github.com/microsoft/learn-declarative-agent-api-plugin-adaptive-cards-typescript](https://github.com/microsoft/learn-declarative-agent-api-plugin-adaptive-cards-typescript).
   1. Sigue los pasos para [descargar el código fuente del repositorio](https://docs.github.com/repositories/working-with-files/using-files/downloading-source-code-archives#downloading-source-code-archives-from-the-repository-view) en el equipo.
   1. Extrae el contenido del archivo ZIP descargado en tu **carpeta de Documentos**.
-  1. Abra la carpeta  en Visual Studio Code.
+  1. Abre la carpeta en Visual Studio Code.
 
 El proyecto de ejemplo es un proyecto de Kit de herramientas de Teams que incluye un agente declarativo con una acción creada con un complemento de API. El complemento de API se conecta a una API anónima que se ejecuta en Azure Functions también incluida en el proyecto. La API pertenece a un restaurante italiano ficticio y te permite navegar por el menú del día y hacer pedidos.
 
@@ -41,10 +41,10 @@ En Visual Studio Code:
   }
   ```
 
-1. Antes de continuar, desde la pestaña **Extensiones** de la barra de actividades, busca e instala la extensión **Controlador de vista previa de tarjeta adaptable** y después crea un archivo de datos para la tarjeta adaptable:
+1. Antes de continuar, desde la pestaña **Extensiones** de la barra de actividades, busca e instala la extensión **Vista previa de tarjeta adaptable** y después crea un archivo de datos para la tarjeta adaptable:
   1. Abre la paleta de comandos al presionar <kbd>CTRL</kbd>+<kbd>P</kbd> con el teclado. Escribe `>Adaptive` para buscar comandos relacionados con el trabajo con tarjetas adaptables.
 
-    ![Captura de pantalla de Visual Studio Code en la que se muestran los comandos relacionados con el trabajo con tarjetas adaptables.](../media/LAB_03/LAB_03/3-visual-studio-code-adaptive-card-commands.png)
+    ![Captura de pantalla de Visual Studio Code en la que se muestran los comandos relacionados con el trabajo con tarjetas adaptables.](../media/LAB_03/3-visual-studio-code-adaptive-card-commands.png)
 
   1. En la lista, elige **Tarjeta adaptable: nuevo archivo de datos**. Visual Studio Code crea un nuevo archivo denominado **dish.data.json**.
   1. Reemplaza su contenido por un dato que represente un plato:
@@ -64,11 +64,11 @@ En Visual Studio Code:
   }
   ```
 
-  1. Guarde los cambios
+  1. Guarda los cambios
 1. Vuelve al archivo **dish.json**.
 1. En la lente, selecciona **Ver tarjeta adaptable**.
 
-  ![Captura de pantalla de Visual Studio Code en la que se muestra la vista previa de la tarjeta adaptable.](../media/LAB_03/LAB_03/3-visual-studio-code-adaptive-card-preview.png)
+  ![Captura de pantalla de Visual Studio Code en la que se muestra la vista previa de la tarjeta adaptable.](../media/LAB_03/3-visual-studio-code-adaptive-card-preview.png)
 
   Visual Studio Code abre una vista previa de la tarjeta al lado. A medida que editas la tarjeta, los cambios se ven inmediatamente en el lado.
 
@@ -171,7 +171,7 @@ En Visual Studio Code:
     }
     ```
 
-  1. Guarde los cambios
+  1. Guarda los cambios
 1. Vuelve al archivo **order.json**.
 1. En la lente, selecciona **Ver tarjeta adaptable**.
 1. Después, reemplaza el contenido del archivo **order.json** por el siguiente código:

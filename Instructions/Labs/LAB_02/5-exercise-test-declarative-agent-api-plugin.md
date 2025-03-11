@@ -49,7 +49,7 @@ En el explorador web:
 
   ![Captura de pantalla de la interfaz de Microsoft 365 Copilot con la respuesta del almuerzo.](../media/LAB_02/3-copilot-lunch-response.png)
 
-1. Realiza un pedido al escribir en el cuadro de texto: **1x espaguetis, 1x té helado** y envía la indicación.
+1. Realiza un pedido escribiendo en el cuadro de texto: **1x espaguetis, 1x té helado** y envía la solicitud.
 1. Examina los datos que el agente envía a la API y continúa con el botón **Confirmar**.
 
   ![Captura de pantalla de la interfaz de Microsoft 365 Copilot con la confirmación de pedido.](../media/LAB_02/3-copilot-order-confirm.png)
