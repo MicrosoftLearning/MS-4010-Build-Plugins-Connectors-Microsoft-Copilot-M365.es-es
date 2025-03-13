@@ -125,7 +125,7 @@ En Visual Studio Code:
 
 1. En la **barra Activity**, abre la extensión **Teams Toolkit**.
 1. Selecciona **Provision** en la sección **Lifecycle**.
-1. Espere a que se complete la carga.
+1. Espera a que se complete la carga.
 1. En la **barra Activity**, cambia a la vista **Run and Debug**.
 1. Selecciona el botón **Start Debugging** situado junto al elemento desplegable de la configuración o presiona <kbd>F5</kbd>. Se inicia una nueva ventana del explorador y navega a Microsoft 365 Copilot.
 
