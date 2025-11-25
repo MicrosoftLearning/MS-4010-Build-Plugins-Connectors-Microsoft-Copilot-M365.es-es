@@ -14,7 +14,7 @@ En este ejercicio, usarás Microsoft Learn será un origen de fundamentación pa
 
 ## Tarea 1: Configurar los datos de fundamentación
 
-Configura la carpeta de OneDrive como origen de datos de fundamentación en el manifiesto del agente declarativo.
+Configura Microsoft Learn como origen de datos de fundamentación en el manifiesto del agente declarativo.
 
 En Visual Studio Code:
 
