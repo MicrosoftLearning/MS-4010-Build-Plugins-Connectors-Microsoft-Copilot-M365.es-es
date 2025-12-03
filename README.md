@@ -1,3 +1,5 @@
+**⚠️ This GitHub repo will retire on 30th December 2025.**
+
 # MS-4010: Crear plugins y conectores para Microsoft Copilot para Microsoft 365
 
 **¿Eres un MCT?** Consulta nuestra [guía de usuario de GitHub para MCT](https://microsoftlearning.github.io/MCT-User-Guide/).
